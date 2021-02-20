@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<meta charset ="UTF-8">
+</head>
+<body>
+<script>
+var qntFuncio = parseInt(prompt("Quantidade de funcionários"));
+
+
+var QuantFunc = qntFuncio;
+var MediaSalarial = 0;
+
+
+var salarioAnterior;
+var salarioAlto;
+var salarioBaixo;
+
+while (qntFuncio > 0) {
+salarioAnterior = salarioFuncio;
+
+var nomeFuncio = prompt("Digite o nome do funcionário");
+var salarioFuncio = parseFloat(prompt("Salário do funcionário"));
+
+if (salarioFuncio > salarioAnterior) {
+salarioAlto = salarioFuncio;
+} else {
+salarioBaixo = salarioFuncio;
+}
+MediaSalarial=MediaSalarial+salarioFuncio;
+qntFuncio--;
+}
+document.write("Média = R$" + (MediaSalarial/QuantFunc));
+
+
+</script>
+</body>
